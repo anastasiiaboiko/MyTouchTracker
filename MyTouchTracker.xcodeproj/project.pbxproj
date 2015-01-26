@@ -10,10 +10,11 @@
 		FDB4E7F21A76E84F0061FC09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E7F11A76E84F0061FC09 /* main.m */; };
 		FDB4E7F51A76E84F0061FC09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E7F41A76E84F0061FC09 /* AppDelegate.m */; };
 		FDB4E7F81A76E84F0061FC09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E7F71A76E84F0061FC09 /* ViewController.m */; };
-		FDB4E7FB1A76E84F0061FC09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB4E7F91A76E84F0061FC09 /* Main.storyboard */; };
 		FDB4E7FD1A76E84F0061FC09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB4E7FC1A76E84F0061FC09 /* Images.xcassets */; };
-		FDB4E8001A76E8500061FC09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB4E7FE1A76E8500061FC09 /* LaunchScreen.xib */; };
 		FDB4E80C1A76E8500061FC09 /* MyTouchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E80B1A76E8500061FC09 /* MyTouchTrackerTests.m */; };
+		FDB4E8171A76FE0A0061FC09 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E8161A76FE0A0061FC09 /* BNRLine.m */; };
+		FDB4E81A1A76FEA40061FC09 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E8191A76FEA40061FC09 /* BNRDrawView.m */; };
+		FDB4E81D1A76FF070061FC09 /* BNRDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E81C1A76FF070061FC09 /* BNRDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,16 @@
 		FDB4E7F41A76E84F0061FC09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FDB4E7F61A76E84F0061FC09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FDB4E7F71A76E84F0061FC09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FDB4E7FA1A76E84F0061FC09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDB4E7FC1A76E84F0061FC09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FDB4E7FF1A76E8500061FC09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FDB4E8051A76E8500061FC09 /* MyTouchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTouchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB4E80A1A76E8500061FC09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB4E80B1A76E8500061FC09 /* MyTouchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTouchTrackerTests.m; sourceTree = "<group>"; };
+		FDB4E8151A76FE0A0061FC09 /* BNRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLine.h; sourceTree = "<group>"; };
+		FDB4E8161A76FE0A0061FC09 /* BNRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLine.m; sourceTree = "<group>"; };
+		FDB4E8181A76FEA40061FC09 /* BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		FDB4E8191A76FEA40061FC09 /* BNRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		FDB4E81B1A76FF070061FC09 /* BNRDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawViewController.h; sourceTree = "<group>"; };
+		FDB4E81C1A76FF070061FC09 /* BNRDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +88,15 @@
 			children = (
 				FDB4E7F31A76E84F0061FC09 /* AppDelegate.h */,
 				FDB4E7F41A76E84F0061FC09 /* AppDelegate.m */,
+				FDB4E8151A76FE0A0061FC09 /* BNRLine.h */,
+				FDB4E8161A76FE0A0061FC09 /* BNRLine.m */,
+				FDB4E8181A76FEA40061FC09 /* BNRDrawView.h */,
+				FDB4E8191A76FEA40061FC09 /* BNRDrawView.m */,
+				FDB4E81B1A76FF070061FC09 /* BNRDrawViewController.h */,
+				FDB4E81C1A76FF070061FC09 /* BNRDrawViewController.m */,
 				FDB4E7F61A76E84F0061FC09 /* ViewController.h */,
 				FDB4E7F71A76E84F0061FC09 /* ViewController.m */,
-				FDB4E7F91A76E84F0061FC09 /* Main.storyboard */,
 				FDB4E7FC1A76E84F0061FC09 /* Images.xcassets */,
-				FDB4E7FE1A76E8500061FC09 /* LaunchScreen.xib */,
 				FDB4E7EF1A76E84F0061FC09 /* Supporting Files */,
 			);
 			path = MyTouchTracker;
@@ -199,8 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB4E7FB1A76E84F0061FC09 /* Main.storyboard in Resources */,
-				FDB4E8001A76E8500061FC09 /* LaunchScreen.xib in Resources */,
 				FDB4E7FD1A76E84F0061FC09 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB4E81A1A76FEA40061FC09 /* BNRDrawView.m in Sources */,
+				FDB4E81D1A76FF070061FC09 /* BNRDrawViewController.m in Sources */,
 				FDB4E7F81A76E84F0061FC09 /* ViewController.m in Sources */,
 				FDB4E7F51A76E84F0061FC09 /* AppDelegate.m in Sources */,
+				FDB4E8171A76FE0A0061FC09 /* BNRLine.m in Sources */,
 				FDB4E7F21A76E84F0061FC09 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +252,6 @@
 			targetProxy = FDB4E8061A76E8500061FC09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FDB4E7F91A76E84F0061FC09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDB4E7FA1A76E84F0061FC09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FDB4E7FE1A76E8500061FC09 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDB4E7FF1A76E8500061FC09 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FDB4E80D1A76E8500061FC09 /* Debug */ = {
@@ -412,6 +403,7 @@
 				FDB4E8111A76E8500061FC09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDB4E8121A76E8500061FC09 /* Build configuration list for PBXNativeTarget "MyTouchTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +412,7 @@
 				FDB4E8141A76E8500061FC09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DAC02BB9-E44C-4B00-8316-A4AA0F67AE67</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyTouchTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>107D7B6D70E45B528E2D7E6A2C7C959D55DBD986</key>
+		<string>https://github.com/anastasiiaboiko/MyTouchTracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyTouchTracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>107D7B6D70E45B528E2D7E6A2C7C959D55DBD986</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/anastasiiaboiko/MyTouchTracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>107D7B6D70E45B528E2D7E6A2C7C959D55DBD986</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>107D7B6D70E45B528E2D7E6A2C7C959D55DBD986</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyTouchTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
