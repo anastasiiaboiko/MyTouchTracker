@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSMutableDictionary *linesInProgress;
 @property (nonatomic, strong) NSMutableArray *finishedLines;
+@property (nonatomic, weak) BNRLine *selectedLine;
 
 @end
 
@@ -35,6 +36,15 @@
         doubleTapRecognizer.delaysTouchesBegan = YES;
         
         [self addGestureRecognizer:doubleTapRecognizer];
+        
+        UITapGestureRecognizer *tapRecognizer =
+        [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                action:@selector(tap:)];
+        tapRecognizer.delaysTouchesBegan = YES;
+        
+        [tapRecognizer requireGestureRecognizerToFail:doubleTapRecognizer];
+        
+        [self addGestureRecognizer:tapRecognizer];
     }
     
     return self;
@@ -138,6 +148,11 @@
     [self.linesInProgress removeAllObjects];
     [self.finishedLines removeAllObjects];
     [self setNeedsDisplay];
+}
+
+- (void)tap:(UIGestureRecognizer *)gr
+{
+    NSLog(@"Recognized tap");
 }
 
 /*
