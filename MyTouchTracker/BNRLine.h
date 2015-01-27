@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CGGeometry.h>
 
 @interface BNRLine : NSObject
 
