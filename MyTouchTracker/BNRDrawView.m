@@ -88,11 +88,6 @@
             [self strokeLine:self.selectedLine];
         }
     }
-    float f = 0.0;
-    for (int i = 0; i < 1000000; i++) {
-        f = f + sin(sin(sin(time(NULL) + i)));
-    }
-    NSLog(@"f = %f", f);
 }
 
 - (void)touchesBegan:(NSSet *)touches
@@ -143,6 +138,8 @@
         
         [self.finishedLines addObject:line];
         [self.linesInProgress removeObjectForKey:key];
+        
+        line.containingArray = self.finishedLines;
     }
     
     [self setNeedsDisplay];
@@ -167,7 +164,8 @@
     NSLog(@"Recognized Double Tap");
     
     [self.linesInProgress removeAllObjects];
-    [self.finishedLines removeAllObjects];
+    //[self.finishedLines removeAllObjects];
+    self.finishedLines = [[NSMutableArray alloc] init];
     [self setNeedsDisplay];
 }
 
@@ -277,6 +275,17 @@
         
         [gr setTranslation:CGPointZero inView:self];
     }
+}
+
+- (int)numberOfLines
+{
+    int count = 0;
+    
+    // Check that they are non-nil before we add their counts...
+    if (self.linesInProgress && self.finishedLines)
+        count = [self.linesInProgress count] + [self.finishedLines count];
+    
+    return count;
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
